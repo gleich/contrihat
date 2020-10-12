@@ -1,0 +1,10 @@
+version: '3'
+services:
+  main:
+    volumes:
+      - '/home/pi/contrihat-config/:/contrihat-config/'
+    build: .
+    privileged: true
+    logging:
+      options:
+        max-size: 500mb
