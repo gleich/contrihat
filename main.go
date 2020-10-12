@@ -9,9 +9,11 @@ import (
 
 func main() {
 	client := api.Auth()
+	firstRun := true
 	for {
 		contributions := api.Contributions(client)
-		lights.Set(contributions)
+		lights.Set(contributions, firstRun)
 		time.Sleep(3 * time.Second)
+		firstRun = false
 	}
 }

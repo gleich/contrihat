@@ -1,6 +1,8 @@
 package lights
 
 import (
+	"time"
+
 	"github.com/Matt-Gleich/contrihat/pkg/api"
 	"github.com/Matt-Gleich/logoru"
 	"github.com/nathany/bobblehat/sense/screen"
@@ -9,7 +11,7 @@ import (
 )
 
 // Set the lights on the sense hat
-func Set(contributions api.Query) {
+func Set(contributions api.Query, firstRun bool) {
 	fb := screen.NewFrameBuffer()
 	days := mergeDays(contributions)
 	var (
@@ -25,6 +27,13 @@ func Set(contributions api.Query) {
 			break
 		}
 		fb.SetPixel(x, y, convert(day))
+		if firstRun {
+			time.Sleep(50 * time.Millisecond)
+			err := screen.Draw(fb)
+			if err != nil {
+				logoru.Error("Failed to draw screen during startup animation;", err)
+			}
+		}
 		x++
 	}
 	err := screen.Draw(fb)
