@@ -1,7 +1,5 @@
 <!-- DO NOT REMOVE - contributor_list:data:start:["Matt-Gleich", "cjdenio", "whitesource-bolt-for-github[bot]"]:end -->
 
-# Run `init.py`
-
 # contrihat
 
 🥧 GitHub contribution graph on the Raspberry Pi Sense Hat LED Matrix
