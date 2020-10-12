@@ -1,8 +1,9 @@
-module github.com/github_username/project_name
+module github.com/Matt-Gleich/contrihat
 
 go 1.15
 
 require (
-	github.com/Matt-Gleich/logoru v0.0.0-20200817001912-097ac1695c5f
-	golang.org/x/sys v0.0.0-20200817155316-9781c653f443 // indirect
+	github.com/Matt-Gleich/logoru v0.0.0-20200923180914-a23bf450ef67
+	github.com/mattn/go-colorable v0.1.8 // indirect
+	golang.org/x/sys v0.0.0-20201009025420-dfb3f7c4e634 // indirect
 )
