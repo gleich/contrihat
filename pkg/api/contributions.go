@@ -11,8 +11,8 @@ type Query struct {
 	Viewer struct {
 		ContributionsCollection struct {
 			ContributionCalendar struct {
-				Colors []string
-				Weeks  []struct {
+				// Colors []string
+				Weeks []struct {
 					ContributionDays []struct {
 						Color string
 					}
@@ -29,5 +29,6 @@ func Contributions(client *githubv4.Client) Query {
 	if err != nil {
 		logoru.Error("Failed to get contributions from GitHub api;", err)
 	}
+	logoru.Info("Got contributions from GitHub API")
 	return q
 }
