@@ -1,9 +1,10 @@
 package main
 
 import (
-	"github.com/Matt-Gleich/logoru"
+	"github.com/Matt-Gleich/contrihat/pkg/api"
 )
 
 func main() {
-	logoru.Success("Program booted up!")
+	client := api.Auth()
+	api.Contributions(client)
 }
