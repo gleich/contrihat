@@ -13,7 +13,7 @@ func main() {
 	for {
 		contributions := api.Contributions(client)
 		lights.Set(contributions, firstRun)
-		time.Sleep(3 * time.Second)
+		time.Sleep(5 * time.Second)
 		firstRun = false
 	}
 }
