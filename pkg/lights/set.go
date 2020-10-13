@@ -29,16 +29,26 @@ func Set(contributions api.Query, firstRun bool) {
 		fb.SetPixel(x, y, convert(day))
 		if firstRun {
 			time.Sleep(50 * time.Millisecond)
+		} else {
+			fb.SetPixel(x, y, color.Black)
 			err := screen.Draw(fb)
 			if err != nil {
-				logoru.Error("Failed to draw screen during startup animation;", err)
+				logoru.Error("Failed to clear pixel;", err)
 			}
+
+			time.Sleep(20 * time.Millisecond)
+			fb.SetPixel(x, y, convert(day))
+			err = screen.Draw(fb)
+			if err != nil {
+				logoru.Error("Failed to set pixel;", err)
+			}
+
+		}
+		err := screen.Draw(fb)
+		if err != nil {
+			logoru.Error("Failed to draw screen;", err)
 		}
 		x++
-	}
-	err := screen.Draw(fb)
-	if err != nil {
-		logoru.Error("Failed to draw screen;", err)
 	}
 	logoru.Success("Updated lights!")
 }
