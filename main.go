@@ -1,7 +1,6 @@
 package main
 
 import (
-	"math/rand"
 	"time"
 
 	"github.com/Matt-Gleich/contrihat/pkg/api"
@@ -17,8 +16,7 @@ func main() {
 		contributions := api.Contributions(client)
 		lights.Set(contributions, firstRun, configuration)
 
-		sleepSeconds := time.Duration(int64(time.Second) * int64(rand.Intn(configuration.UpdateInterval)))
-		time.Sleep(sleepSeconds)
+		time.Sleep(3 * time.Second)
 		firstRun = false
 	}
 }

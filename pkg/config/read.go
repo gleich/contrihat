@@ -11,8 +11,7 @@ import (
 
 // Configuration outline
 type Outline struct {
-	Levels         []string `yaml:"levels"`
-	UpdateInterval int      `yaml:"update_interval"`
+	Levels []string `yaml:"levels"`
 }
 
 // Get the configuration folder name
@@ -40,11 +39,6 @@ func ReadGeneral() Outline {
 	if err != nil {
 		logoru.Critical("Failed to parse configuration file")
 		os.Exit(1)
-	}
-
-	// Setting defaults
-	if outline.UpdateInterval == 0 {
-		outline.UpdateInterval = 2
 	}
 	return outline
 }
