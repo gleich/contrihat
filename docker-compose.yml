@@ -1,6 +1,6 @@
 version: '3'
 services:
-  main:
+  contrihat:
     volumes:
       - '~/contrihat-config/:/root/contrihat-config/'
     build: .
