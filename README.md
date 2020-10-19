@@ -21,9 +21,17 @@ Display your GitHub contributions on the [raspberry pi sense hat](https://www.ra
 
 That's it!
 
-## 🛣 Road Map
+## ⚙️ Configuration
 
-- Custom colors
+The configuration file is stored in `~/contrihat-config/config.yml` and is optional. At the moment you can only configure the color levels:
+
+```yaml
+levels:
+  - '#ffb300'
+  - '#0022ff'
+  - '#00ff08'
+  - '#00ffff'
+```
 
 ## 🙌 Contributing
 
