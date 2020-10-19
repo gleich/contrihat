@@ -7,6 +7,7 @@ import (
 	"path/filepath"
 	"strings"
 
+	"github.com/Matt-Gleich/contrihat/pkg/config"
 	"github.com/Matt-Gleich/logoru"
 	"github.com/shurcooL/githubv4"
 	"golang.org/x/oauth2"
@@ -14,12 +15,7 @@ import (
 
 func Auth() *githubv4.Client {
 	// Reading from pat.txt file
-	homeDir, err := os.UserHomeDir()
-	if err != nil {
-		logoru.Critical("Failed to get homedir for auth;", err)
-		os.Exit(1)
-	}
-	b, err := ioutil.ReadFile(filepath.Join(homeDir, "/contrihat-config/pat.txt"))
+	b, err := ioutil.ReadFile(filepath.Join(config.GetFolderName(), "pat.txt"))
 	if err != nil {
 		logoru.Critical("Failed to read from pat.txt file")
 		os.Exit(1)

@@ -12,4 +12,5 @@ require (
 	golang.org/x/oauth2 v0.0.0-20200902213428-5d25da1a8d43
 	golang.org/x/sys v0.0.0-20201009025420-dfb3f7c4e634 // indirect
 	gopkg.in/go-playground/colors.v1 v1.2.0
+	gopkg.in/yaml.v3 v3.0.0-20200615113413-eeeca48fe776
 )

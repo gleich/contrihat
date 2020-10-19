@@ -4,6 +4,7 @@ import (
 	"time"
 
 	"github.com/Matt-Gleich/contrihat/pkg/api"
+	"github.com/Matt-Gleich/contrihat/pkg/config"
 	"github.com/Matt-Gleich/logoru"
 	"github.com/nathany/bobblehat/sense/screen"
 	"github.com/nathany/bobblehat/sense/screen/color"
@@ -11,7 +12,20 @@ import (
 )
 
 // Set the lights on the sense hat
-func Set(contributions api.Query, firstRun bool) {
+func Set(contributions api.Query, firstRun bool, configuration config.Outline) {
+	// Setting color levels
+	colorMap := map[string]string{}
+	colors := contributions.Viewer.ContributionsCollection.ContributionCalendar.Colors
+	if len(configuration.Levels) == 4 {
+		for i, level := range configuration.Levels {
+			colorMap[colors[i]] = level
+		}
+	} else {
+		for _, color := range colors {
+			colorMap[color] = color
+		}
+	}
+
 	fb := screen.NewFrameBuffer()
 	days := mergeDays(contributions)
 	var (
@@ -26,7 +40,7 @@ func Set(contributions api.Query, firstRun bool) {
 		if y == 8 {
 			break
 		}
-		fb.SetPixel(x, y, convert(day))
+		fb.SetPixel(x, y, convert(colorMap[day]))
 		if firstRun {
 			time.Sleep(50 * time.Millisecond)
 		}

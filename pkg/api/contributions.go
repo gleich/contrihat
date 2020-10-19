@@ -11,8 +11,8 @@ type Query struct {
 	Viewer struct {
 		ContributionsCollection struct {
 			ContributionCalendar struct {
-				// Colors []string
-				Weeks []struct {
+				Colors []string
+				Weeks  []struct {
 					ContributionDays []struct {
 						Color string
 					}
