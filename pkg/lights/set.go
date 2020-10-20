@@ -67,7 +67,8 @@ func mergeDays(contributions api.Query) (days []string) {
 func convert(rawHex string) color.Color {
 	hex, err := colors.ParseHEX(rawHex)
 	if err != nil {
-		logoru.Error("Failed to parse hex code;", hex)
+		logoru.Warning("Failed to parse hex code;", hex)
+		return color.New(0, 0, 0)
 	}
 	rgb := hex.ToRGB()
 	return color.New(rgb.R, rgb.G, rgb.B)
