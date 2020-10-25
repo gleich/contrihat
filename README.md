@@ -13,13 +13,13 @@ Display your GitHub contributions on the [raspberry pi sense hat](https://www.ra
 
 ## 🚀 Setup
 
-1. [Create a personal access token](https://github.com/settings/tokens/new) with `read:user` permissions under the user section.
+1. [Create a personal access token](https://github.com/settings/tokens/new) with `read:user` permission under the user section.
 2. On the Raspberry Pi store this token in `~/contrihat-config/pat.txt` (you will have to create the folder as well).
-3. Clone this repo and `cd` into it.
-4. If you don't already have it install docker and docker-compose. This can be done easily just by running `sh install-docker.sh`.
+3. Clone this repo and `cd` into it on the Raspberry Pi.
+4. If you don't already have it already install docker and docker-compose. This can be done easily by running `sh install-docker.sh` in this repo.
 5. Run `docker-compose up -d`.
 
-That's it!
+That's it! You now have your GitHub contribution graph on the Sense Hat!
 
 ## ⚙️ Configuration
 
@@ -35,7 +35,7 @@ levels:
 
 ## 🙌 Contributing
 
-Before contributing please read the [CONTRIBUTING.md file](https://github.com/Matt-Gleich/contrihat/blob/master/CONTRIBUTING.md)
+Before contributing, please read the [CONTRIBUTING.md file](https://github.com/Matt-Gleich/contrihat/blob/master/CONTRIBUTING.md)
 
 <!-- DO NOT REMOVE - contributor_list:start -->
 
