@@ -22,7 +22,20 @@ func Set(contributions api.Query, firstRun bool, configuration config.Outline) {
 		}
 	} else {
 		for _, color := range colors {
-			colorMap[color] = color
+			if contributions.Viewer.ContributionsCollection.ContributionCalendar.IsHalloween {
+				switch color {
+				case "var(--color-calendar-halloween-graph-day-L1-bg)":
+					colorMap[color] = "#FFEE4A"
+				case "var(--color-calendar-halloween-graph-day-L2-bg)":
+					colorMap[color] = "#FFC501"
+				case "var(--color-calendar-halloween-graph-day-L3-bg)":
+					colorMap[color] = "#FE9600"
+				case "var(--color-calendar-halloween-graph-day-L4-bg)":
+					colorMap[color] = "#03001C"
+				}
+			} else {
+				colorMap[color] = color
+			}
 		}
 	}
 
