@@ -32,9 +32,20 @@ func Set(contributions api.Query, firstRun bool, configuration config.Outline) {
 					colorMap[color] = "#FE9600"
 				case "var(--color-calendar-halloween-graph-day-L4-bg)":
 					colorMap[color] = "#03001C"
+				default:
+					colorMap[color] = "#000000"
 				}
 			} else {
-				colorMap[color] = color
+				switch color {
+				case "var(--color-calendar-graph-day-L1-bg)":
+					colorMap[color] = "#9BE9A8"
+				case "var(--color-calendar-graph-day-L2-bg)":
+					colorMap[color] = "#40C463"
+				case "var(--color-calendar-graph-day-L3-bg)":
+					colorMap[color] = "#31A14E"
+				case "var(--color-calendar-graph-day-L4-bg)":
+					colorMap[color] = "#216E38"
+				}
 			}
 		}
 	}
