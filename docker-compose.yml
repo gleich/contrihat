@@ -3,9 +3,11 @@ services:
   contrihat:
     volumes:
       - '~/contrihat-config/:/root/contrihat-config/'
-    build: .
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
     privileged: true
     logging:
       options:
-        max-size: 500mb
+        max-size: 200mb
     restart: unless-stopped
