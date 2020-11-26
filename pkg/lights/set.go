@@ -45,6 +45,8 @@ func Set(contributions api.Query, firstRun bool, configuration config.Outline) {
 					colorMap[color] = "#31A14E"
 				case "var(--color-calendar-graph-day-L4-bg)":
 					colorMap[color] = "#216E38"
+				default:
+					colorMap[color] = "#000000"
 				}
 			}
 		}
