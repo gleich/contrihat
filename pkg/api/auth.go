@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/Matt-Gleich/contrihat/pkg/config"
-	"github.com/Matt-Gleich/logoru"
+	"github.com/gleich/contrihat/pkg/config"
+	"github.com/gleich/logoru"
 	"github.com/shurcooL/githubv4"
 	"golang.org/x/oauth2"
 )

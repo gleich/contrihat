@@ -5,7 +5,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/Matt-Gleich/logoru"
+	"github.com/gleich/logoru"
 	"gopkg.in/yaml.v3"
 )
 

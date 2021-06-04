@@ -1,9 +1,9 @@
-module github.com/Matt-Gleich/contrihat
+module github.com/gleich/contrihat
 
 go 1.15
 
 require (
-	github.com/Matt-Gleich/logoru v0.0.0-20210115050520-e872b4cf39b1
+	github.com/gleich/logoru v0.0.0-20210604030243-2b936140111e
 	github.com/golang/protobuf v1.4.3 // indirect
 	github.com/google/go-cmp v0.5.4 // indirect
 	github.com/kr/text v0.2.0 // indirect

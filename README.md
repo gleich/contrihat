@@ -1,13 +1,13 @@
-<!-- DO NOT REMOVE - contributor_list:data:start:["Matt-Gleich"]:end -->
+<!-- DO NOT REMOVE - contributor_list:data:start:["gleich"]:end -->
 
 # contrihat
 
 🥧 GitHub contribution graph on the Raspberry Pi Sense Hat LED Matrix. Made in ~1 hour.
 
-![build](https://github.com/Matt-Gleich/contrihat/workflows/build/badge.svg)
-![test](https://github.com/Matt-Gleich/contrihat/workflows/test/badge.svg)
-![lint](https://github.com/Matt-Gleich/contrihat/workflows/lint/badge.svg)
-![release](https://github.com/Matt-Gleich/contrihat/workflows/release/badge.svg)
+![build](https://github.com/gleich/contrihat/workflows/build/badge.svg)
+![test](https://github.com/gleich/contrihat/workflows/test/badge.svg)
+![lint](https://github.com/gleich/contrihat/workflows/lint/badge.svg)
+![release](https://github.com/gleich/contrihat/workflows/release/badge.svg)
 
 Display your GitHub contributions on the [raspberry pi sense hat](https://www.raspberrypi.org/products/sense-hat/)!
 
@@ -35,12 +35,12 @@ levels:
 
 ## 🙌 Contributing
 
-Before contributing, please read the [CONTRIBUTING.md file](https://github.com/Matt-Gleich/contrihat/blob/master/CONTRIBUTING.md)
+Before contributing, please read the [CONTRIBUTING.md file](https://github.com/gleich/contrihat/blob/master/CONTRIBUTING.md)
 
 <!-- DO NOT REMOVE - contributor_list:start -->
 
 ## 👥 Contributors
 
-- **[@Matt-Gleich](https://github.com/Matt-Gleich)**
+- **[@gleich](https://github.com/gleich)**
 
 <!-- DO NOT REMOVE - contributor_list:end -->

@@ -3,7 +3,7 @@ package api
 import (
 	"context"
 
-	"github.com/Matt-Gleich/logoru"
+	"github.com/gleich/logoru"
 	"github.com/shurcooL/githubv4"
 )
 

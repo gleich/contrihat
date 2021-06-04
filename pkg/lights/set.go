@@ -3,9 +3,9 @@ package lights
 import (
 	"time"
 
-	"github.com/Matt-Gleich/contrihat/pkg/api"
-	"github.com/Matt-Gleich/contrihat/pkg/config"
-	"github.com/Matt-Gleich/logoru"
+	"github.com/gleich/contrihat/pkg/api"
+	"github.com/gleich/contrihat/pkg/config"
+	"github.com/gleich/logoru"
 	"github.com/nathany/bobblehat/sense/screen"
 	"github.com/nathany/bobblehat/sense/screen/color"
 	"gopkg.in/go-playground/colors.v1"

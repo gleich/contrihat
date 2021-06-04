@@ -1,6 +1,6 @@
 release:
   github:
-    owner: Matt-Gleich
+    owner: gleich
     name: 'contrihat'
   prerelease: auto
 before:

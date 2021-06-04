@@ -3,9 +3,9 @@ package main
 import (
 	"time"
 
-	"github.com/Matt-Gleich/contrihat/pkg/api"
-	"github.com/Matt-Gleich/contrihat/pkg/config"
-	"github.com/Matt-Gleich/contrihat/pkg/lights"
+	"github.com/gleich/contrihat/pkg/api"
+	"github.com/gleich/contrihat/pkg/config"
+	"github.com/gleich/contrihat/pkg/lights"
 )
 
 func main() {
